@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  color: #0091ff;
+}
+
+.primary-button {
+  margin: 1rem 0;
+}
+
+.primary-button button {
+  cursor: pointer;
+  background-color: #247aea;
+  font-family: "Ubuntu", "sans-serif";
+  color: #fff;
+  padding: .6rem 2rem;
+  border: none;
+  font-size: 1rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 100%;
+}
+
+.primary-button button:disabled {
+  cursor: not-allowed;
+}
+
+.primary-button button:hover {
+  background-color: #153572;
+}
+/*# sourceMappingURL=PrimaryButton.css.map */

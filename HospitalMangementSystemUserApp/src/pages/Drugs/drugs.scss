@@ -1,0 +1,167 @@
+@import '../../index.scss';
+
+.drugs{
+    
+    margin: 5rem 6rem ;
+    @media screen and (max-width: 950px) {
+        margin: 5rem 1rem;
+    }
+    h1{
+        text-align: center;
+        font-family: $secondary-font;
+        color: $primary-color;
+            span{
+                color: $secondary-Color;
+            }
+        }
+}
+.drugs-flex{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap:2rem;
+}
+
+
+.drugs-container{
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    font-family: $secondary-font;
+    cursor: pointer;
+    border: 1px solid $primary-color;
+    transform: scale(0.9);
+    transition: all 0.3s;
+    @media screen and (max-width: 950px) {
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        &:hover{
+            box-shadow: none;
+            transform: none;
+        }
+    }
+    &:hover{
+        box-shadow: 0 0 14px 0px #34343423;
+        transform: scale(1);
+    }
+}
+
+
+.drugs-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+// .drugs-container {
+//     margin-top: 200px;
+//     position: relative;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     background: #fff;
+//     margin: 20px;
+// }
+
+.drugs-container .drugs-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.drugs-container .drugs-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    @media screen and (max-width: 950px){
+        width: 100%;
+        
+    }
+}
+
+.drugs-container .drugs-details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    line-height: 1em;
+    color: $primary-color;
+}
+
+.drugs-container .drugs-details span {
+    font-size: 1em;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $secondary-Color;
+}
+
+.drugs-container .drugs-details p {
+    color: black;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.drugs-container .drugs-details h3 {
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: #a2a2a2;
+    float: left;
+}
+// .drugs-container .drugs-details button {
+//     background: #000;
+//     color: #fff;
+//     border: none;
+//     outline: none;
+//     padding: 15px 20px;
+//     margin-top: 5px;
+//     font-size: 16px;
+//     letter-spacing: 1px;
+//     text-transform: uppercase;
+//     font-weight: 600;
+//     border-radius: 40px;
+//     float: right;
+// }
+
+
+
+/* responsive */
+// @media (max-width: 1080px) {
+//     .drugs-container {
+//         height: auto;
+//     }
+//     .drugs-container .drugs-img {
+//         padding: 40px;
+//         box-sizing: border-box;
+//         width: 100% !important;
+//         height: auto;
+//         text-align: center;
+//         overflow: hidden;
+//     }
+//     .drugs-container .drugs-img img {
+//         left: initial;
+//         max-width: 100%;
+//         transform: rotate(0deg);
+//     }
+//     .drugs-details {
+//         width: 100% !important;
+//         height: auto;
+//         padding: 20px;
+//     }
+//     .drugs-container .drugs-details p {
+//         margin-left: 0;
+//         max-width: 100%;
+//     }
+// }

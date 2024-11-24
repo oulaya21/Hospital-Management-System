@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+// colors : 
+
+  $primary-color :  #26447B;
+  $secondary-Color : #FF8F3F;
+  $dark-blue : #153572;
+  $light-blue : #0091ff;
+  $gray-text : #757678;
+  $btn-blue : #247aea;
+
+// fonts : 
+
+  $primary-font : "Work Sans";
+  $secondary-font : "Ubuntu", "sans-serif";
+
+  
+
+  a{
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover{
+  color: $light-blue;
+}
+  
+
+
+
+

@@ -1,0 +1,45 @@
+@import '../../../index.scss';
+.app__news{
+    margin: 4rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    @media screen and (max-width: 950px) {
+        margin: 4rem 4rem;  
+        flex-direction: column-reverse;
+    }
+    @media screen and (max-width: 650px) {
+        margin: 1.5rem;
+    }
+}
+.app__news-info{
+    flex: 1;
+    h1{ 
+        margin: 2rem 0 0 0 ;
+        font-size: 3rem;
+        font-family: $primary-font;
+        color: $primary-color;
+        font-weight: 600;
+        span{
+            color: $secondary-Color;
+            }
+    }
+    p{
+        color: $gray-text;
+        font-family: $secondary-font;
+        margin: 2rem 0;
+    }
+}
+.app__news-info_button{
+    display: flex;
+    gap: 2rem;
+}
+.app__news-img{
+    flex: 1;
+    display: flex;
+    align-self: flex-end;
+    padding: 2rem;
+    img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../index.scss';
+
+.secondary-button{
+    margin: 1rem 0;
+    button{
+        cursor: pointer;
+        background-color: transparent;
+        font-family: $secondary-font;
+        color: $gray-text;
+        padding: .5rem 2rem;
+        min-width: 100%;
+        border: 1px solid transparent;
+        font-size: 1rem;
+        transition: all 0.3s ease-in;
+        border: 1px solid $gray-text;
+
+    }
+    
+    button:hover{
+        color: #fff;
+        border: 1px solid $light-blue;
+        background-color: $btn-blue;
+        
+    }
+
+}

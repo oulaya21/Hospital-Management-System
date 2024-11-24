@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  color: #0091ff;
+}
+
+.app__news {
+  margin: 4rem 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 950px) {
+  .app__news {
+    margin: 4rem 4rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__news {
+    margin: 1.5rem;
+  }
+}
+
+.app__news-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.app__news-info h1 {
+  margin: 2rem 0 0 0;
+  font-size: 3rem;
+  font-family: "Work Sans";
+  color: #26447B;
+  font-weight: 600;
+}
+
+.app__news-info h1 span {
+  color: #FF8F3F;
+}
+
+.app__news-info p {
+  color: #757678;
+  font-family: "Ubuntu", "sans-serif";
+  margin: 2rem 0;
+}
+
+.app__news-info_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.app__news-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 2rem;
+}
+
+.app__news-img img {
+  width: 100%;
+}
+/*# sourceMappingURL=news.css.map */

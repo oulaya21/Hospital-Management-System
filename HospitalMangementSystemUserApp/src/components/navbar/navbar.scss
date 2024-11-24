@@ -1,0 +1,141 @@
+@import '../../index.scss';
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0.5rem 6rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 100000;
+    @media screen and (max-width: 1150px) {
+        padding: 0 2rem;
+    }
+    @media screen and (max-width: 950px) {
+        padding: 0 1rem;
+        align-items: baseline;
+    }
+}
+
+.navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    max-width: min-content;
+    padding: 1rem 0;
+    
+}
+
+.navbar-links-logo{
+    user-select: none;
+    position: relative;
+    width: 80px;
+    img{
+        top: -30px;
+        width: 80px;
+        position: absolute;
+    }
+}
+
+.navbar-links-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    @media screen and (max-width: 950px) {
+        display: none;
+    }
+}
+
+.navbar-sign{
+    display: flex;
+    justify-content: flex-end;  
+    gap: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+    @media screen and (max-width: 950px){
+        display: none;
+    }
+}
+
+.navbar-links-container a ,
+.navbar-menu-container a {
+    color: $dark-blue;
+    font-family: $secondary-font;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    width: max-content; 
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer ;
+}
+
+.navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: absolute;
+    right: 1rem;
+    
+}
+
+.navbar-menu-button{
+    display: none;
+    position: relative;
+    margin-right: 2rem;
+    justify-content: center;
+    align-items: flex-end;
+    @media screen and (max-width: 950px) {
+        display: flex;
+        margin-right: 1rem;
+    }
+    svg {
+        cursor: pointer;
+        color: $light-blue;
+        position: absolute;
+        inset: auto;
+        z-index: 1000;
+        font-size: 20px;
+    }
+        
+    
+}
+
+.navbar-menu-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgba(105, 105, 105, 0.279);
+    backdrop-filter: blur(50px);
+    padding: 6rem 2rem;
+    position: fixed;
+    right: -2rem;
+    top: 0;
+    width: 90%;
+    height: 100vh;
+    z-index: 1;
+    @media screen and (min-width: 950px) {
+        display: none;
+    }
+}
+.navbar-menu-container-links{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    a{
+         font-size: 2rem;
+    }
+
+}
+
+
+
+
+
